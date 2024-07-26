@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Responsive Furniture Website</title> -->
+     <title> Katoch'sFurniture</title>
+    <!-- LInk To CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <!-- ended  -->
+         <!-- aos  -->
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+         <!-- ended -->
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div id="logo">
+        <img src="./icon/logoicon1.png" alt="" >
+        <a href="#" class="logo">Katoch <span>X.</span></a>
+    </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home"><i class="fa-solid fa-house-chimney-user"></i>Home</a></li>
+            <li><a href="./shop/shop.html"><i class="fa-solid fa-cart-plus"></i>Shop</a></li>
+            <!-- <li><a href="#shop"><i class="fa-solid fa-cart-plus"></i>Shop</a></li> -->
+            <li><a href="#about"><i class="fa-solid fa-info-circle"></i>About</a></li>
+            <li><a href="#contact2"><i class="fa-solid fa-headset"></i>Contact</a></li>
+<button id="login-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto; border: none; cursor: pointer;"><i class="fa-solid fa-right-to-bracket"></i>Login</button>
+</ul>
+
+
+    </header>
+    <!-- login popup html -->
+   
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+            <i class="fa-solid fa-user-secret" ></i>
+
+          </div>
+      
+          <div class="login-container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+      <button type="submit" id="submit-btn"><a href="">Login</a></button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="login-container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    <!-- ended -->
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1><Span>Make</Span>Your Comfort <br> Is Our <span>Happiness</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolores veritatis ad blanditiis molestias sunt aspernatur.</p>
+            <a href="shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <!-- Shop -->
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span>New Arrival</span>
+            <h2 data-aos="zoom-in" data-aos="zoom-in-up">Shop Now</h2>
+        </div>
+        <!-- Content -->
+        <div class="shop-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./images/p1.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Gray Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>46$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./images/p2.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Gray Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>46$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./images/p3.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Gray Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>46$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./images/p4.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Gray Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>46$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./images/p5.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Gray Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>46$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./images/p6.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Gray Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>46$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+        </div>
+    </section>
+    <!-- New Arrival -->
+    <section class="new" id="new">
+        <div class="heading">
+            <span>New Collection</span>
+            <h2  data-aos="zoom-in" data-aos="zoom-in-up">Best Selling</h2>
+        </div>
+        <!-- Content -->
+        <div class="new-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./images/new1.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Gray Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>46$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+             <!-- Box 2 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="./images/new2.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Gray Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>46$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+             <!-- Box 3 -->
+             <div class="box">
+                <div class="box-img">
+                    <img src="./images/new3.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Gray Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <span>46$</span>
+                <i class='bx bx-cart' ></i>
+            </div>
+        </div>
+    </section>
+
+  <div class="video">
+    <video src="./videos/video4.mp4" autoplay muted loop></video>
+  </div>
+
+
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>Furniture is important part <br>for comfort</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, placeat praesentium. Quas quis, omnis repellendus reiciendis eius fuga quidem eum illum veniam explicabo excepturi fugit distinctio sequi quisquam quaerat dignissimos! Beatae delectus numquam perspiciatis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ex aut repellat ipsum possimus delectus cum quaerat rerum?</p>
+            <a href="#shop" class="btn">Learn More.</a>
+        </div>
+    </section>
+    <!-- Brands -->
+    <section class="brands" id="brands">
+        <div class="heading">
+            <span>Brands</span>
+            <h2 data-aos="zoom-in">Our Brands Partners</h2>
+        </div>
+        <div class="brands-container">
+            <img src="./images/Google.png" alt="">
+            <img src="./images/amazon.png" alt="">
+            <img src="./images/netflix.png" alt="">
+            <img src="./images/tesla.png" alt="">
+            <img src="./images/starbucks.png" alt="">
+            <img src="./images/zoom.png" alt="">
+        </div>
+    </section>
+
+
+      <!-- section5 started -->
+      <section id="slide-show">
+        <span> projects</span>
+        <h1 data-aos="zoom-in" data-aos="zoom-in-up">Recent Project</h1>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item">
+                    <img src="./images/sofa-modern.jpeg" alt="Sofa Design">
+                    <h2>Sofa</h2>
+                    <p>Comfortable and Stylish</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/dinnig-table-slide2.jpeg" alt="Dining Table Design">
+                    <h2>Dining Table</h2>
+                    <p>Elegant and Modern</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/office-chair-slide.avif" alt="Office Chair Design">
+                    <h2>Office Chair</h2>
+                    <p>Ergonomic and Sleek</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bedroom-slide2.jpeg" alt="Bed Design">
+                    <h2>Bed</h2>
+                    <p>Cozy and Luxurious</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bookself-slideshow.jpg" alt="Bookshelf Design">
+                    <h2>Bookshelf</h2>
+                    <p>Modern and Functional</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/coffee-table-slide.jpg" alt="Coffee Table Design">
+                    <h2>Coffee Table</h2>
+                    <p>Stylish and Practical</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <!-- section5 ended -->
+
+    <!-- section news letter  -->
+    <section class="newsletter" id="contact">
+        <h2>Subscribe To Newsletter</h2>
+        <div class="news-box">
+            <input type="text" placeholder="Enter Your Email...">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </section>
+
+    <!-- Our Gallary Start -->
+
+        <div class="gallary">
+            <h3 data-aos="zoom-in" data-aos="zoom-in-up">Our Gallary</h3>
+    
+
+    <div class="carousel-container2">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="./images/owl-images1.jpg" alt="Furniture 1"></div>
+            <div class="item"><img src="./images/second-image.jpg" alt="Furniture 2"></div>
+            <div class="item"><img src="./images/third-image.jpg" alt="Furniture 3"></div>
+            <div class="item"><img src="./images/fourth-kitchen.jpg" alt="Furniture 4"></div>
+            <div class="item"><img src="./images/fifth-images.jpg" alt="Furniture 5"></div>
+        </div>
+    </div>
+</div> 
+    
+    <!-- Our Gallary End -->
+    
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact2">
+        <div class="content-text">
+            <h2>Get In <span>Touch</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, harum. Sint recusandae in suscipit blanditiis, neque eos quam praesentium impedit?</p>
+            <div class="list">
+                <li><a href="#">+9100000000000000</a></li>
+                <li><a href="#">example@gmail.com</a></li>
+                <li><a href="#">Saurabh chand katoch</a></li>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="#">
+                <input type="name" placeholder="Name" required>
+                <input type="number" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="Send" class="submit" required>
+
+            </form>
+        </div>
+
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- section map  -->
+
+    <!-- <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27159.33426476892!2d76.4979310659187!3d31.690842811703572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904d44c8c5639a5%3A0x2315ba2666cfba94!2sHamirpur%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1720278630589!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section> -->
+
+<!-- ended map section  -->
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <h2>Brand <span>X.</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt amet minus mollitia impedit qui asperiores!</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Services</h3>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Product</h3>
+            <li><a href="#">Sofa's</a></li>
+            <li><a href="#">Chair's</a></li>
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Office</a></li>
+        </div>
+        <div class="footer-box contact-info">
+            <h3>Contact</h3>
+            <span>New York City, USA 10004</span>
+            <span>+1 100 1004 0001</span>
+            <span>brian@brandx.com</span>
+            
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&#169; CarpoolVenom All Right Reserved.</p>
+    </div>
+    <!-- Link To JS -->
+    <script src="script.js"></script>
+
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- Owl Carousel JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+          $(document).ready(function(){
+              $(".owl-carousel").owlCarousel({
+                  loop: true,
+                  margin: 10,
+                  nav: true,
+                  autoplay: true,
+                  autoplayTimeout: 3000,
+                  responsive: {
+                      0: {
+                          items: 1
+                      },
+                      600: {
+                          items: 2
+                      },
+                      1000: {
+                          items: 3
+                      }
+                  }
+              });
+          });
+      </script>
+
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
